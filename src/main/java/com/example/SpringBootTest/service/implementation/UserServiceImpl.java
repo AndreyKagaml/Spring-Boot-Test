@@ -29,4 +29,9 @@ public class UserServiceImpl implements UserService {
             throw new EntityErrorException("User with this username already exists");
         }
     }
+
+    @Override
+    public User findUserByUsername(String username) {
+        return userRepository.findUserByUsername(username);
+    }
 }

@@ -1,10 +1,9 @@
 package com.example.SpringBootTest.repository;
 
-import com.example.SpringBootTest.model.User;
+import com.example.SpringBootTest.model.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface UserRepository extends JpaRepository<User, Long> {
-    User findUserByUsername(String username);
+public interface ProductRepository extends JpaRepository<Product, Long> {
 }
